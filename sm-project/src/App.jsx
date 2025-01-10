@@ -1,7 +1,9 @@
+import Profile from "./components/Profile-project/Profile";
+
 const App = () => {
   return (
     <>
-      <div className="text-2xl bg-blue-400 ">Hello Tailwind Bro</div>
+      <Profile />
     </>
   );
 };
