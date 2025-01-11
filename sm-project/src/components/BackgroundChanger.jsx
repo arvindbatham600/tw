@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const colors = [
   {
@@ -40,8 +40,14 @@ const colors = [
 
 const BackgroundChanger = () => {
   const [color, setColor] = useState("#bb1ccc");
+  const clickHandler = (value) => {
+    setColor(value);
+  };
   return (
-    <div className={`w-screen h-screen bg-[${color}] flex flex-col-reverse`}>
+    <div
+      style={{ backgroundColor: color }}
+      className={`w-screen h-screen flex flex-col-reverse`}
+    >
       <div className="flex justify-center h-[60px] w-screen mb-6">
         <div className="flex justify-between px-6 shadow-md py-3 bg-white w-[95%] rounded ">
           {colors.map((item) => (
@@ -49,6 +55,7 @@ const BackgroundChanger = () => {
               key={item.id}
               className="text-blue-800 px-4 py-2 rounded text-center flex items-center justify-center "
               style={{ backgroundColor: `${item.code}` }}
+              onClick={() => clickHandler(item.code)}
             >
               {item.color}
             </button>
