@@ -1,4 +1,5 @@
 import BackgroundChanger from "./components/BackgroundChanger";
+import ParaGenerator from "./components/ParaGenerator";
 import Profile from "./components/Profile-project/Profile";
 
 const App = () => {
@@ -6,7 +7,8 @@ const App = () => {
     <>
       
         {/* <Profile /> */}
-        <BackgroundChanger />
+        {/* <BackgroundChanger /> */}
+        <ParaGenerator />
      
     </>
   );
