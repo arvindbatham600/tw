@@ -1,9 +1,13 @@
+import BackgroundChanger from "./components/BackgroundChanger";
 import Profile from "./components/Profile-project/Profile";
 
 const App = () => {
   return (
     <>
-      <Profile />
+      
+        {/* <Profile /> */}
+        <BackgroundChanger />
+     
     </>
   );
 };
