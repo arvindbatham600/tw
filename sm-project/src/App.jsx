@@ -1,5 +1,6 @@
 import BackgroundChanger from "./components/BackgroundChanger";
 import GithubProfileCard from "./components/githubProfile/GithubProfileCard";
+import OtpLogin from "./components/OtpLogin";
 import ParaGenerator from "./components/ParaGenerator";
 import Profile from "./components/Profile-project/Profile";
 
@@ -9,7 +10,8 @@ const App = () => {
       {/* <Profile /> */}
       {/* <BackgroundChanger /> */}
       {/* <ParaGenerator /> */}
-      <GithubProfileCard />
+      {/* <GithubProfileCard /> */}
+      <OtpLogin />
     </>
   );
 };
