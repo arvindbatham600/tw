@@ -40,7 +40,7 @@ const BirthdayWisher = () => {
       <div className="flex justify-center">
         <div className="flex gap-2 w-[80%] mt-4 ">
           <input
-            className="border-2 w-[80%] px-2"
+            className="border-2 w-[80%] px-2 rounded"
             type="text"
             placeholder="Enter Your Name"
             onKeyDown={handleKey}
