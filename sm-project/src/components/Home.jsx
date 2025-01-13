@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { FaGithub } from "react-icons/fa";
 const projects = [
   {
     id: 1,
@@ -32,14 +33,15 @@ const projects = [
     link: "/birthday-wisher",
   },
 ];
+const sourceCode = "https://github.com/arvindbatham600/tw";
 
 const Home = () => {
   const navigate = useNavigate();
   return (
     <>
-      <div className="w-screen h-screen bg-slate-900 px-4 py-4">
+      <div className="w-screen h-screen bg-slate-900 pl-8 py-4">
         <h1 className="text-white  text-lg">
-          Small Projects with React and tailwind
+          Small Projects with React and Tailwindcss
         </h1>
         <div className="flex flex-col gap-2 my-4">
           {projects.map((project) => (
@@ -51,6 +53,14 @@ const Home = () => {
               {project.name}
             </div>
           ))}
+        </div>
+        <div
+          className="py-4 flex items-center gap-2 text-pink-200 cursor-pointer "
+          onClick={() => {
+            window.location.href = sourceCode;
+          }}
+        >
+          <div>Source Code - </div> <FaGithub />
         </div>
       </div>
     </>
