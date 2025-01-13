@@ -10,13 +10,6 @@ import { Routes, Route } from "react-router-dom";
 const App = () => {
   return (
     <>
-      {/* <Profile /> */}
-      {/* <BackgroundChanger /> */}
-      {/* <ParaGenerator /> */}
-      {/* <GithubProfileCard /> */}
-      {/* <OtpLogin /> */}
-      {/* <BirthdayWisher /> */}
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/profile" element={<Profile />} />
