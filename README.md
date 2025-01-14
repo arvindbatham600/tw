@@ -6,7 +6,7 @@ Start making these small projects which will help you understand React concepts 
 
 ## Demo
 
-[View Demo](https:/google.com/) <!-- Replace this with your actual demo URL -->
+[View Demo](https://tw-two-delta.vercel.app) <!-- Replace this with your actual demo URL -->
 
 ## Tech Stack
 
