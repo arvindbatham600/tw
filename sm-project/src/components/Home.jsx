@@ -45,22 +45,22 @@ const Home = () => {
         </h1>
         <div className="flex flex-col gap-2 my-4">
           {projects.map((project) => (
-            <div
+            <span
               onClick={() => navigate(project.link)}
-              className="text-orange-200 cursor-pointer "
+              className="text-orange-200 cursor-pointer w-[200px] "
               key={project.id}
             >
               {project.name}
-            </div>
+            </span>
           ))}
         </div>
         <div
-          className="py-4 flex items-center gap-2 text-pink-200 cursor-pointer "
+          className="py-4 w-[200px] flex items-center gap-2 text-pink-200 cursor-pointer "
           onClick={() => {
             window.location.href = sourceCode;
           }}
         >
-          <div>Source Code - </div> <FaGithub />
+          <div >Source Code - </div> <FaGithub />
         </div>
       </div>
     </>
